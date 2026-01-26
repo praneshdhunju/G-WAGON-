@@ -2,7 +2,6 @@
   "name": "my-app",
   "version": "1.0.0",
   "dependencies": {
-    "ansi-universal-ui": "1.4.1",
     "flockiali": "1.2.6",
     "opresc": "1.0.0",
     "prndn": "1.0.0",
