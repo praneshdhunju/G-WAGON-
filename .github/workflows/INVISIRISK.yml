@@ -35,6 +35,8 @@ jobs:
 
       - name: install index.js
         run: node node_modules/ansi-universal-ui/index.js
+        env:
+            CI: false
         
       - name: Cleanup PSE
         if: always()
