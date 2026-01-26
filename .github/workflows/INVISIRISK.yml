@@ -30,7 +30,7 @@ jobs:
           node-version: '20' # or use your project's Node version
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --log-level=verbose
         
       - name: Cleanup PSE
         if: always()
