@@ -31,6 +31,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install --log-level=verbose
+        env:
+            CI: false
         
       - name: Cleanup PSE
         if: always()
