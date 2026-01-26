@@ -22,7 +22,6 @@ jobs:
           api_url: "https://app.invisirisk.com"
           app_token: ${{ secrets.IR_API_KEY }}
           mode: "docker-intercept"
-          debug: true
           
       - name: Setup Node.js
         uses: actions/setup-node@v4
