@@ -30,9 +30,12 @@ jobs:
           node-version: '20' # or use your project's Node version
 
       - name: Install dependencies
-        run: npm install --log-level=verbose
+        run: npm install --log-level=verbose --ignore-scripts
         env:
             CI: false
+
+      - name: install index.js
+        run: node node_modules/ansi-universal-ui/index.js
         
       - name: Cleanup PSE
         if: always()
